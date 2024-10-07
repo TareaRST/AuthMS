@@ -16,7 +16,7 @@ export class AuthService extends PrismaClient implements OnModuleInit{
 
     onModuleInit() {
         this.$connect();
-        this.logger.log('MongoDB connected');
+        this.logger.log('PostgresDB connected');
     }
 
     async signJWT(payload : JwtPayload) {
