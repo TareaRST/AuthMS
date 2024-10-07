@@ -13,7 +13,8 @@ async function bootstrap() {
   {
     transport: Transport.TCP,
     options: {
-      port: parseInt(process.env.PORT) || 4000,
+      host: '0.0.0.0',
+      port: envs.port || 5000
     }
   }
 );
